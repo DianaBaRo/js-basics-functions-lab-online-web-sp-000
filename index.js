@@ -11,8 +11,8 @@ function distanceFromHqInFeet(pickupLocation) {
   return distanceFromHqInBlocks(pickupLocation) * 264;
 };
 
-function distanceTravelledInFeet() {
-
+function distanceTravelledInFeet(pickupLocation, endingBlock) {
+  return distanceFromHqInFeet(pickupLocation) * 264;
 };
 
 function calculatesFarePrice(start, destination) {
